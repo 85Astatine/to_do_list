@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color:  rgb(248, 237, 227);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.to_do_card{
+    min-width: 450px;
+    min-height: 250px;
+    background-color: rgb(208, 184, 168);
+    border-radius: 20px;
+    position: absolute;
+    top: 200px;
+}
+
+.top h1{
+    color: rgb(141, 73, 58);
+    font-size: 26px;
+    margin: 60px 0 0 35px;
+}
+.inp{
+    width: 380px;
+    background-color: rgb(248, 237, 227);
+    border-radius: 20px;
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 30px 35px;
+    
+}
+.inp input{
+    width: 230px;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    background-color: transparent;
+    font-size: 18px;
+}
+.inp_btn{
+    color: rgb(248, 237, 227);
+    background-color: rgb(141, 73, 58);
+    width: 90px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+}
+.list ul{
+    list-style: none;
+}
+.list ul li{
+    color:rgb(248, 237, 227) ;
+    font-size: 19px;
+    margin: 0px 0 25px 45px;
+    cursor: pointer;
+    width: 360px;
+    position: relative;
+}
+.list ul li.checked{
+    text-decoration: line-through;
+    color:rgb(141, 73, 58) ;
+}
+.list ul li span{
+    color: rgb(248, 237, 227);
+}
+.list ul li:last-child{
+    margin-bottom: 50px;
+}
+.list ul li span{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    padding: 5px 10px;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.list ul li span:hover{
+    background-color: rgb(141, 73, 58);
+}
+
+
+@media(max-width:460px){
+    .to_do_card{
+        transform: scale(0.8);
+    }
+}
